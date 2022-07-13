@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Apollo Games Test</title>
+
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="libs/create.js"></script>
+	<script src="js/words.js"></script>
+	<script src="js/main.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<canvas id="stage" width="500" height="500"></canvas>
+<h1 id="notice">Hello!</h1>
+
+<div class="container">
+	<div id="controls">
+		<ul id="stats">
+			<li class="score"><h1 id="score"> </h1><label>score</label></li>
+			<li class="time"><h1 id="time"> </h1><label>time</label></li>
+			<li class="words"><h1 id="words"> </h1><label>words</label></li>
+		</ul>
+	</div>
+
+	<div id="start">
+		<h1>Start typing.</h1>
+		<p>Pause / Un-pause the game by pressing the <strong>Space</strong> key.</p>
+
+		<p><strong>RULES :</strong> </p>
+		<p>1. Game starts after pressing start button</p>
+		<p>2. Game session lasts 20 seconds</p>
+		<p>3. Golden Letters are harder to get, however they give twice as many points</p>
+		<br />
+		<p>
+			<button id="btn-start">start</button>
+		</p>
+	</div>
+  
+  
+  	<div id="end">
+		<h1>Time's Up!</h1>
+		<p id="p1">Your Score is <strong>100</strong>.</p>
+		<br />
+		<p>
+			<button id="btn-restart">restart</button>
+		</p>
+	</div>
+
+
+
+</div>
+
+</body>
+</html>
